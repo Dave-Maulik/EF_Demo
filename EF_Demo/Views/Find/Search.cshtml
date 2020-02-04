@@ -1,0 +1,35 @@
+﻿@model EF_Demo.Models.EmployeeDetails
+@{
+    ViewBag.Title = "Search";
+}
+
+<h3>Input Following Details</h3>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form method="post" action="@Url.Action("Search","Find")">
+                @Html.AntiForgeryToken()
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="EmployeeDept">Employee Department</label>
+                        @Html.EnumDropDownListFor(model => model.EmpDepartment, htmlAttributes: new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="EmployeeAge">Employee Age</label>
+                        <input type="text" name="EmpAge" class="form-control" id="EmployeeAge">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success">Get Details</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
