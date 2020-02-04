@@ -7,7 +7,7 @@ namespace EF_Demo.Models
 {
     public enum Departments
     {
-        DOTnet,
+        DOTnet = 1,
         Mean_Stack,
         Mern_Stack,
         ROR,
