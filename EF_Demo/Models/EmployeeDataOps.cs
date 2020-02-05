@@ -25,7 +25,7 @@ namespace EF_Demo.Models
 
         public List<Employee> GetEmp(Employee employee)
         {
-            var result = Db.TEmployees.Where(b => b.EmpDepartment == employee.EmpDepartment && b.EmpAge <= 22).ToList();
+            var result = Db.TEmployees.Where(b => b.EmpDepartment == employee.EmpDepartment &&  b.EmpAge <= employee.EmpAge ).ToList();
             return result;
         }
     }

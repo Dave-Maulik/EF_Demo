@@ -175,7 +175,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Find\Search.cshtml" />
-    <Content Include="Views\Show\show.cshtml" />
+    <Content Include="Views\Show\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

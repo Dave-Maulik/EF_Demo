@@ -9,10 +9,12 @@ namespace EF_Demo.Controllers
 {
     public class ShowController : Controller
     {
+        
         // GET: Show
-        public ActionResult show()
+        public ActionResult Index()
         {
-            return View();
+            List<Employee> emplist = (List<Employee>)TempData["Emps"];
+            return View(emplist);
         }
     }
 }

@@ -4,16 +4,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Routing;
 
 namespace EF_Demo.Controllers
 {
     public class FindController : Controller
     {
         EmployeeDataOps Db;
+   
         public FindController()
         {
             Db = new EmployeeDataOps();
+            
         }
+
+       
+
         // GET: Find
         public ActionResult Search()
         {
@@ -26,8 +32,8 @@ namespace EF_Demo.Controllers
             if (ModelState.IsValid)
             {
                 var result = Db.GetEmp(employee);
-                return RedirectToAction("show", "Show",result);
-               
+                TempData["Emps"] = result;
+                return RedirectToAction("Index","Show");
             }
             return View();
         }
