@@ -15,11 +15,7 @@ namespace EF_Demo.Controllers
         public FindController()
         {
             Db = new EmployeeDataOps();
-            
         }
-
-       
-
         // GET: Find
         public ActionResult Search()
         {

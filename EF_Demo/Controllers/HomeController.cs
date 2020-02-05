@@ -12,7 +12,5 @@ namespace EF_Demo.Controllers
         {
             return View();
         }
-
-       
     }
 }

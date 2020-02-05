@@ -10,8 +10,11 @@ namespace EF_Demo.Models
     {
         [Key]
         public int EmpId { get; set; }
+        [Required]
         public string EmpName { get; set; }
+        [Required]
         public int EmpAge { get; set; }
+        [Required]
         public Departments EmpDepartment { get; set; }
     }
 }
