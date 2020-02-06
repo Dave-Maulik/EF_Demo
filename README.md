@@ -1,5 +1,5 @@
 # EF_Demo
-An Simple Application Using EF and LINQ Queries ASp.net (c#)
+An Simple Application Using EF and LINQ Queries ASP.net (c#)
 
 ## EF6 (Entity Framework)
 Entity Framework 6 (EF6) is a tried and tested object-relational mapper (O/RM) for .NET with many years of feature development and stabilization.
