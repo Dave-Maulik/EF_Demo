@@ -25,13 +25,9 @@ namespace EF_Demo.Controllers
         [HttpPost]
         public ActionResult Search(Employee employee)
         {
-            if (ModelState.IsValid)
-            {
                 var result = Db.GetEmp(employee);
                 TempData["Emps"] = result;
-                return RedirectToAction("Index","Show");
-            }
-            return View();
+                return RedirectToAction("Index", "Show");
         }
     }
 }
